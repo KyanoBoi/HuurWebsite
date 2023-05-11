@@ -1,0 +1,116 @@
+body,
+html {
+  width: 100%;
+  padding: 0;
+  
+}
+
+.contact-us {
+  position: relative;
+  font-size: 60px;
+  height: 900px;
+  color: white;
+}
+
+.linkkk {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/house.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.4);
+  z-index: -1;
+}
+
+.houses {
+  width: 100%;
+  height: 550px;
+}
+
+.card:hover {
+  height: 105%;
+}
+
+.card {
+  height: 100%;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-img-top {
+  height: 50%;
+  object-fit: cover;
+}
+
+.card-body {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-custom:hover {
+  border-color: green;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+  width: auto;
+
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.navbar {
+  transition: all 0.5s;
+}
+
+.navbar-scrolled {
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+}
+
+.navbar-scrolled .nav-link {
+  color: white;
+}
+
+.kaarthouder {
+  width: 100%;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.homePage {
+  height: 2300px;
+}
+.contactPage {
+  width: 100%;
+  overflow-x: hidden;
+  height: 95%;
+}
+.foot {
+  padding-bottom: 60px;
+}
