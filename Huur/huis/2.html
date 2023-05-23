@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/Style.css">
+    <script>
+        // Fetch the JSON data
+        fetch('../data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Access the second house object
+                const house = data.houses[1];
+
+                // Create HTML elements to display the house information
+                const houseDiv = document.createElement('div');
+                const idHeading = document.createElement('h2');
+                const sizeParagraph = document.createElement('p');
+                const priceParagraph = document.createElement('p');
+                const monthlyPriceParagraph = document.createElement('p');
+                const waterParagraph = document.createElement('p');
+                const energyParagraph = document.createElement('p');
+                const poolParagraph = document.createElement('p');
+                const poolSizeParagraph = document.createElement('p');
+                const maxPeopleParagraph = document.createElement('p');
+                const detailsParagraph = document.createElement('p');
+
+                // Set the content of the HTML elements
+                idHeading.textContent = '' + house.name;
+                sizeParagraph.textContent = 'Size: ' + house.size;
+                priceParagraph.textContent = 'Price: ' + house.price;
+                monthlyPriceParagraph.textContent = 'Monthly Price: ' + house.monthlyPrice;
+                waterParagraph.textContent = 'Water: ' + (house.water ? 'Available' : 'Not available');
+                energyParagraph.textContent = 'Energy: ' + house.energy;
+                poolParagraph.textContent = 'Pool: ' + (house.pool ? 'Available' : 'Not available');
+                poolSizeParagraph.textContent = 'Pool Size: ' + house.poolsize;
+                maxPeopleParagraph.textContent = 'Max Occupancy: ' + house.maxOccupancy;
+                detailsParagraph.textContent = 'Details: ' + house.otherDetails;
+
+                // Append the HTML elements to the houseDiv
+                houseDiv.appendChild(idHeading);
+                houseDiv.appendChild(sizeParagraph);
+                houseDiv.appendChild(priceParagraph);
+                houseDiv.appendChild(monthlyPriceParagraph);
+                houseDiv.appendChild(waterParagraph);
+                houseDiv.appendChild(energyParagraph);
+                houseDiv.appendChild(poolParagraph);
+                houseDiv.appendChild(poolSizeParagraph);
+                houseDiv.appendChild(maxPeopleParagraph);
+                houseDiv.appendChild(detailsParagraph);
+
+                // Append the houseDiv to the specified div with id "houseData"
+                const targetDiv = document.getElementById('houseData');
+                targetDiv.appendChild(houseDiv);
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+
+</head>
+
+<body>
+
+    <div class="housepage">
+        <nav class="navbar navbar-expand-md sticky-top d-flex">
+            <a class="navbar-brand" href="../index.html">
+                <p class="nav-link"> <img src="../img/logo.png" alt=""></p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--NAV ON TOP-->
+        <div class="white"></div>
+        <div class="row justify-content-center">
+            <div class="col-4 data-house">
+                <br><br><br><br>
+                <div id="houseData"></div>
+                <br>
+                <h2>Heeft u interesse of heeft u vragen?</h2>
+                <!-- Calendly link widget begin -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                    async></script>
+                <a href=""
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kyanodemaertelaere'});return false;">Contacteer
+                    mij via een meeting.</a>
+                <!-- Calendly link widget end -->
+            </div>
+            <div class="col-6" style="height: 800px;">
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <img src="../img/vac1.1.jpg" class="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/vac1.2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/vac1.3.jpg" alt="Slide 3">
+                    </div>
+                    <div class="carousel-prev">&lt;</div>
+                    <div class="carousel-next">&gt;</div>
+                </div>
+            </div>
+
+            <script src="../js/carousel.js"></script>
+
+            <footer class="text-center foot"></footer>
+</body>
+
+</html>
