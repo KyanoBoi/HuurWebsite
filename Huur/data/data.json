@@ -1,0 +1,75 @@
+{
+    "houses": [
+      {
+        "id": 1,
+        "weeklyPrice": "350€",
+        "monthlyPrice": "1000€",
+        "pool": "gezamelijk zwembad voor dit huis en het andere huis.",
+        "maxOccupancy": "4 personen",
+        "otherDetails": "living met open keuken voorzien van alle comfort zoals microgolf, heteluchtoven, vaatwasser, wasmachine en droogkast, 1 slaapkamers met tweepersoonsbed, 1 slaapkamer met 2 eenpersoonsbedden, 2 badkamers met douches, lavabo en toilet,  afgesloten inpandig terras en groot zonnige dakterras",
+        "images": [
+         { "src": "../houseImages1/1.jpg"      },
+         { "src": "../houseImages1/2.jpg"      },
+         { "src": "../houseImages1/3.jpg"      },
+         { "src": "../houseImages1/4.jpg"      },
+         { "src": "../houseImages1/5.jpg"      },
+         { "src": "../houseImages1/6.jpg"      },
+         { "src": "../houseImages1/7.jpg"      },
+         { "src": "../houseImages1/8.jpg"      },
+         { "src": "../houseImages1/9.jpg"      },
+         { "src": "../houseImages1/10.jpg"     },
+         { "src": "../houseImages1/11.jpg"     },
+         { "src": "../houseImages1/12.jpg"     },
+         { "src": "../houseImages1/13.jpg"     },
+         { "src": "../houseImages1/14.jpg"     },
+         { "src": "../houseImages1/15.jpg"     },
+         { "src": "../houseImages1/16.jpg"     },
+         { "src": "../houseImages1/17.jpg"     },
+         { "src": "../houseImages1/18.jpg"     },
+         { "src": "../houseImages1/19.jpg"     },
+         { "src": "../houseImages1/living.jpg" }
+        ],
+        "parking": "Parking voorzien rechtover het appartement"
+      },
+      {
+        "id": 2,
+        "weeklyPrice": "350€",
+        "monthlyPrice": "1000€",
+        "pool": "gezamelijk  zwembad voor dit huis en het andere huis.",
+        "maxOccupancy": "4 personen",
+        "otherDetails": "living met open keuken voorzien van alle comfort zoals microgolf, heteluchtoven, vaatwasser, wasmachine en droogkast, 1 slaapkamers met tweepersoonsbed, 1 slaapkamer met 2 eenpersoonsbedden, 2 badkamers met douches, lavabo en toilet,  afgesloten inpandig terras en groot zonnige dakterras",
+        "images": [
+          { "src":"../houseImages2/1.jpg"  },
+          { "src":"../houseImages2/2.jpg"  },
+          { "src":"../houseImages2/3.jpg"  },
+          { "src":"../houseImages2/4.jpg"  },
+          { "src":"../houseImages2/5.jpg"  },
+          { "src":"../houseImages2/6.jpg"  },
+          { "src":"../houseImages2/7.jpg"  },
+          { "src":"../houseImages2/8.jpg"  },
+          { "src":"../houseImages2/9.jpg"  },
+          { "src":"../houseImages2/10.jpg" },
+          { "src":"../houseImages2/11.jpg" },
+          { "src":"../houseImages2/12.jpg" },
+          { "src":"../houseImages2/13.jpg" },
+          { "src":"../houseImages2/14.jpg" },
+          { "src":"../houseImages2/15.jpg" },
+          { "src":"../houseImages2/16.jpg" },
+          { "src":"../houseImages2/17.jpg" },
+          { "src":"../houseImages2/18.jpg" },
+          { "src":"../houseImages2/19.jpg" },
+          { "src":"../houseImages2/20.jpg" },
+          { "src":"../houseImages2/21.jpg" },
+          { "src":"../houseImages2/22.jpg" },
+          { "src":"../houseImages2/23.jpg" },
+          { "src":"../houseImages2/24.jpg" },
+          { "src":"../houseImages2/25.jpg" },
+          { "src":"../houseImages2/26.jpg" },
+          { "src":"../houseImages2/27.jpg" },
+          { "src":"../houseImages2/28.jpg" }
+        ],
+        "parking": "Parking voorzien rechtover het appartement"
+      }
+    ]
+  }
+  
