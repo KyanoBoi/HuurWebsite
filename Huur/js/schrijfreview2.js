@@ -68,7 +68,7 @@ function submitReview() {
     }
 
     // Save the rating and reviewText to the Firebase database
-    const reviewRef = database.ref("reviews/1").push();
+    const reviewRef = database.ref("reviews/2").push();
     reviewRef.set({
         rating: rating,
         reviewText: reviewText,
