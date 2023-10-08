@@ -530,3 +530,16 @@ a {
    justify-content: center;
    align-items: center;
  }
+
+ .Meeting {
+  height: 70px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+ }
+
+ .meetinga {
+  color: white;
+  text-decoration: none;
+ }
